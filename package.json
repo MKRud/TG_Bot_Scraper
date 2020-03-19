@@ -1,0 +1,21 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "botgram": "^2.2.0",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "needle": "^2.3.2",
+    "osmosis": "^1.1.10",
+    "request": "^2.88.2",
+    "tress": "^1.1.4"
+  },
+  "devDependencies": {},
+  "description": ""
+}
