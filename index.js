@@ -115,11 +115,3 @@ bot.command("next", function (msg, reply) {
 
 })
 
-// reply.text(
-//     `${aniObj[i].name}: 
-// Rating - ${aniObj[i].rating} 
-// ${aniObj[i].link}`)
-
-// bot.command(function (msg, reply) {
-//     reply.text("Invalid command.")
-// })
