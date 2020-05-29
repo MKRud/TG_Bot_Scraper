@@ -10,6 +10,7 @@ aniObjRandom = {};
 
 
 request('https://yummyanime.club/top', (error, response, html) => {
+  console.log(html);
 
     if (!error && response.statusCode == 200) {
         const $ = cheerio.load(html);
@@ -24,10 +25,10 @@ request('https://yummyanime.club/top', (error, response, html) => {
                 name,
                 rating,
                 link
-            };  
+            };
         })
     }
-    // console.log(aniObj);          
+    // console.log(aniObj);
 
 });
 
@@ -93,12 +94,12 @@ bot.command("day_anime", function (msg, reply) {
         k = kIter;
 
         reply.text(
-          `${aniObj[k].name}: 
-Rating - ${aniObj[k].rating} 
+          `${aniObj[k].name}:
+Rating - ${aniObj[k].rating}
 ${aniObj[k].link}`)
         if (kIter > 98) {
           kIter = 0;
-          
+
         }
       }
       iter += 9;
@@ -114,12 +115,3 @@ bot.command("next", function (msg, reply) {
     reply.text('/day_anime')
 
 })
-
-// reply.text(
-//     `${aniObj[i].name}: 
-// Rating - ${aniObj[i].rating} 
-// ${aniObj[i].link}`)
-
-// bot.command(function (msg, reply) {
-//     reply.text("Invalid command.")
-// })
