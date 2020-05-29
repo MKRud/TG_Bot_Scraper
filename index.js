@@ -115,7 +115,3 @@ bot.command("next", function (msg, reply) {
     reply.text('/day_anime')
 
 })
-<<<<<<< HEAD
-=======
-
->>>>>>> 2d27000c4aa1a0e107f43a0494b68fe83c60ad7c
